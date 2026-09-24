@@ -68,7 +68,7 @@ Display_Env_Data read_sensors() {
 
   ENS160_Sensors_Data ens160_data = ens160_manager.read();
 
-  data.temperature = aht21_data.temperature;
+  data.temperature = bmp280_data.temperature;
   data.humidity = aht21_data.humidity;
   data.pressure = bmp280_data.pressure;
   data.aqi = ens160_data.aqi;
